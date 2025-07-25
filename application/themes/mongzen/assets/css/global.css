@@ -1,0 +1,64 @@
+:root {
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --line-height-25_6: 25.6px;
+  --line-height-30: 30px;
+  --line-height-50_4: 50.4px;
+  --color-grey-93: #ebedef;
+  --color-grey-98: #f9fafb;
+  --color-azure-12: #0c2231;
+  --color-azure-48: #06aeef;
+  --color-azure-33: #1b2550;
+  --color-azure-24: #ed1c24;
+  --font-size-36: 36px;
+  --letter-spacing--0_4: -0.4px;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-25_6);
+}
+body.menu-active {
+  overflow: hidden;
+}
+
+a,
+button,
+.btn {
+  display: inline-block;
+}
+a:link, a:active, a:visited, a:focus, a:hover,
+button:link,
+button:active,
+button:visited,
+button:focus,
+button:hover,
+.btn:link,
+.btn:active,
+.btn:visited,
+.btn:focus,
+.btn:hover {
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+img,
+picture {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* fix ccm area on edit */
+
+/*# sourceMappingURL=global.css.map */
