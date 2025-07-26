@@ -1,18 +1,28 @@
+@import "components/header";
+
 :root {
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-weight-600: 600;
-  --line-height-25_6: 25.6px;
-  --line-height-30: 30px;
-  --line-height-50_4: 50.4px;
-  --color-grey-93: #ebedef;
-  --color-grey-98: #f9fafb;
-  --color-azure-12: #0c2231;
-  --color-azure-48: #06aeef;
-  --color-azure-33: #1b2550;
-  --color-azure-24: #ed1c24;
-  --font-size-36: 36px;
-  --letter-spacing--0_4: -0.4px;
+
+  // Colors
+  --color-green-100: #a8d5ba;
+  --color-green-200: #6b9a6d;
+  --color-green-300: #4b7f52;
+  --color-green-400: #2e5b3c;
+  --color-green-500: #1b3a24;
+  --color-orange: #cc4a02;
+
+  // Additional palette (optional)
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-base: #2e5b3c;
+  --color-accent: #a8d5ba;
+
+  // Font Sizes
+
+  // Font Families
+  --font-primary: "Sarabun", serif;
 }
 
 html {
@@ -21,12 +31,8 @@ html {
 
 body {
   font-style: normal;
-  font-weight: var(--font-weight-400);
-  line-height: var(--line-height-25_6);
-
-  &.menu-active {
-    overflow: hidden;
-  }
+  font-family: var(--font-primary);
+  color: var(--color-text-base);
 }
 
 a,
@@ -65,3 +71,8 @@ div.ccm-area-footer {
   // text-align: unset !important;
 }
 
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
