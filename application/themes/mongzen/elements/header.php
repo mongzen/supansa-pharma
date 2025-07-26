@@ -46,7 +46,7 @@ $this->inc('elements/header_top.php');
 	</div>
 
 	<!-- Search Bar -->
-	<div class="search-bar">
+	<div class="search-bar py-2">
 		<div class="container">
 			<?php
 				$search = new GlobalArea('Search : ' . LANGAREA);
