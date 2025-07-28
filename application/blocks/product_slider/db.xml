@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+    <table name="btProductSlider">
+
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+
+        <field name="settings" type="X2"></field>
+
+    </table>
+
+    <table name="btProductSliderEntries">
+
+        <field name="id" type="I">
+            <autoincrement/>
+            <unsigned/>
+            <key/>
+        </field>
+
+        <field name="bID" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+
+        <field name="position" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+
+        <field name="slide_title" type="C" size="255"></field>
+
+        <field name="slide_subtitle" type="X"></field>
+
+        <field name="slide_button_text" type="C" size="255"></field>
+
+        <field name="slide_button_link" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+
+        <field name="slide_image" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="slide_image_alt" type="C" size="255"></field>
+        <field name="slide_image_data" type="X2"></field>
+
+    </table>
+
+</schema>
