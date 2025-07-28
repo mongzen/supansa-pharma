@@ -29,13 +29,11 @@ $slides = $controller->slides;
 					<div class="slide-title"><?php echo h($entry['slide_title']); ?></div>
 					<?php endif; ?>
 
-					<?php if (!empty($entry['slide_button_text'])): ?>
-					<?php echo h($entry['slide_button_text']); ?>
-					<?php endif; ?>
-
-
 					<?php if (!empty($entry['slide_button_link_link'])): ?>
-					<a class="slide-button" href="<?php echo $entry['slide_button_link_link']; ?>"></a>
+					<a class="slide-button"
+						href="<?php echo $entry['slide_button_link_link']; ?>"><?php if (!empty($entry['slide_button_text'])): ?>
+						<?php echo h($entry['slide_button_text']); ?>
+						<?php endif; ?></a>
 					<?php endif; ?>
 				</div>
 
@@ -69,6 +67,8 @@ $slides = $controller->slides;
 
 		<?php endforeach; ?>
 	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
 </div>
 <?php endif; ?>
 
@@ -78,12 +78,12 @@ $slides = $controller->slides;
 const swiper = new Swiper('.product-slider', {
 	loop: true,
 	autoplay: {
-		delay: 50000,
+		delay: 5000,
 	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
-	}
+	},
 });
 </script>
 <?php endif; ?>

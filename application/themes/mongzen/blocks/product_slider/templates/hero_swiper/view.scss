@@ -1,6 +1,7 @@
 .product-slider {
 	background: url("./background.jpg") no-repeat center center;
 	background-size: cover;
+	background-color: #9eceb133;
 	width: 100%;
 	height: 520px;
 	flex-shrink: 0;
@@ -21,11 +22,35 @@
 			gap: 16px;
 			flex-shrink: 0;
 		}
+		&-pagination-bullet {
+			border-radius: 10px;
+			background: var(--Deep-Evergreen, #193320);
+			opacity: 0.2;
+			&-active {
+				opacity: 0.75;
+			}
+		}
 	}
 	.slide {
+		&-content {
+			max-width: 500px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		&-button {
+			white-space: nowrap;
+			color: var(--Deep-Evergreen, #193320);
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 15px;
+			border-radius: 30px;
+			background: #fff;
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+		}
 		&-subtitle {
 			color: var(--Deep-Evergreen, #193320);
-			font-family: Sarabun;
 			font-size: 20px;
 			font-style: normal;
 			font-weight: 500;
