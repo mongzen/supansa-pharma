@@ -1,10 +1,10 @@
 .bestSeller {
 	&-page-list {
 		&-wrapper {
-			padding: 2rem 0;
-		}
-		&-header {
-			margin-bottom: 2rem;
+			.container {
+				max-width: 1260px;
+				margin: auto;
+			}
 		}
 		&-pages {
 			max-width: 1240px;

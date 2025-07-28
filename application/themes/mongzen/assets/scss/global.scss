@@ -97,4 +97,11 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
+  margin-bottom: 2rem;
+}
+
+.main-article {
+  @extend %flex-column;
+  gap: 40px;
+  padding: 40px 0;
 }
