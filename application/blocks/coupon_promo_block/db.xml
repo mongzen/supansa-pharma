@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+    <table name="btCouponPromoBlock">
+
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+
+        <field name="settings" type="X2"></field>
+
+    </table>
+
+    <table name="btCouponPromoBlockEntries">
+
+        <field name="id" type="I">
+            <autoincrement/>
+            <unsigned/>
+            <key/>
+        </field>
+
+        <field name="bID" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+
+        <field name="position" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+
+        <field name="titleBadge" type="C" size="255"></field>
+
+        <field name="mainText" type="X2"></field>
+
+        <field name="buttonText" type="C" size="255"></field>
+
+        <field name="buttonURL" type="C" size="255"></field>
+        <field name="buttonURL_protocol" type="C" size="20"></field>
+
+        <field name="image" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="image_alt" type="C" size="255"></field>
+        <field name="image_data" type="X2"></field>
+
+        <field name="backgroundColor" type="C" size="255"></field>
+
+        <field name="isImageRight" type="C" size="255"></field>
+
+    </table>
+
+</schema>
